@@ -2,12 +2,130 @@
 <html lang="th">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ข้อมูลส่วนตัว</title>
-    <link rel="stylesheet" href="../style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:'Kanit',sans-serif;
+        }
+
+        body{
+            min-height:100vh;
+            background:linear-gradient(135deg,#2b0000,#8b0000,#d60000);
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            padding:40px;
+        }
+
+        .card{
+            width:1000px;
+            max-width:95%;
+            background:rgba(255,255,255,0.08);
+            backdrop-filter:blur(20px);
+            border-radius:25px;
+            padding:40px;
+            box-shadow:0 20px 40px rgba(0,0,0,.35);
+            color:white;
+        }
+
+        h1{
+            text-align:center;
+            font-size:42px;
+            margin-bottom:35px;
+            color:#ffd5d5;
+        }
+
+        .content{
+            display:flex;
+            gap:40px;
+            align-items:center;
+            flex-wrap:wrap;
+        }
+
+        .photo{
+            flex:1;
+            text-align:center;
+        }
+
+        .photo img{
+            width:280px;
+            border-radius:20px;
+            border:4px solid rgba(255,255,255,.3);
+            box-shadow:0 10px 25px rgba(0,0,0,.4);
+        }
+
+        .info{
+            flex:2;
+        }
+
+        .info p{
+            font-size:22px;
+            margin:18px 0;
+            padding:12px 18px;
+            background:rgba(255,255,255,.08);
+            border-left:5px solid #ff4d4d;
+            border-radius:10px;
+        }
+
+        .back{
+            display:inline-block;
+            margin-top:30px;
+            padding:12px 28px;
+            background:#ffffff;
+            color:#b00000;
+            text-decoration:none;
+            border-radius:12px;
+            font-weight:bold;
+            transition:.3s;
+        }
+
+        .back:hover{
+            background:#ffe5e5;
+        }
+    </style>
 </head>
 <body>
 
-<h1>ข้อมูลส่วนตัว</h1>
+<div class="card">
+
+    <h1>ข้อมูลส่วนตัว</h1>
+
+    <div class="content">
+
+        <div class="photo">
+            <img src="profile.jpeg" alt="รูปโปรไฟล์">
+        </div>
+
+        <div class="info">
+            <p><strong>ชื่อ-นามสกุล :</strong> นายกิตตินัทธ์ ประทาเพชร</p>
+
+            <p><strong>ชื่อเล่น :</strong> ภูมิ</p>
+
+            <p><strong>วันเกิด :</strong> 11 กรกฎาคม 2551</p>
+
+            <p><strong>อายุ :</strong> 18 ปี</p>
+
+            <p><strong>สัญชาติ :</strong> ไทย</p>
+
+            <p><strong>เชื้อชาติ :</strong> ไทย</p>
+
+            <p><strong>ศาสนา :</strong> พุทธ</p>
+
+            <p><strong>แผนการเรียน :</strong> ภาษาไทย-สังคมศึกษา</p>
+        </div>
+
+    </div>
+
+    <a href="index.html" class="back">← กลับหน้าแรก</a>
+
+</div>
 
 </body>
 </html>
